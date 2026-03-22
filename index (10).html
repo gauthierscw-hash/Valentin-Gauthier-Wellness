@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Valentin & Gauthier Wellness — Jacuzzi, Piscine à nage, Sauna & Bain Froid Premium | France</title>
+<meta name="description" content="Valentin & Gauthier Wellness : expert en jacuzzis, piscines à nage contre-courant, saunas et bains froids haut de gamme. Livraison et installation en France, Belgique, Suisse, Luxembourg. Devis gratuit."/>
+<meta name="keywords" content="jacuzzi, spa, piscine à nage, spa de nage contre-courant, sauna infrarouge, bain froid, cryothérapie, bien-être, relaxation, France, Belgique, Suisse, Luxembourg, hot tub, swim spa, cold plunge"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Valentin & Gauthier Wellness — Bien-être haut de gamme"/>
+<meta property="og:description" content="Jacuzzis, piscines à nage, saunas et bains froids premium. Livraison et installation partout en France."/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+/* ══════════════════════════════════════════
+   RESET & VARIABLES
+══════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --dark:#0a0e14;
+  --dark2:#0f1520;
+  --dark3:#141c2a;
+  --mid:#1e2a3a;
+  --gold:#c9a96e;
+  --gold2:#e8cc9a;
+  --gold3:#a07840;
+  --white:#f8f5ef;
+  --grey:#9aa3b0;
+  --light:#e8e4dc;
+  --border:rgba(201,169,110,.18);
+  --border2:rgba(255,255,255,.08);
+  --ff:'Jost',sans-serif;
+  --ffs:'Cormorant Garamond',serif;
+  --radius:4px;
+  --shadow:0 20px 60px rgba(0,0,0,.4);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);background:var(--dark);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.page{display:none}.page.active{display:block}
+button{font-family:var(--ff);cursor:pointer}
+
+/* ══════════════════════════════════════════
+   TOPBAR
+══════════════════════════════════════════ */
+.topbar{background:var(--gold3);padding:8px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar-left{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.9);display:flex;align-items:center;gap:8px}
+.topbar-right{display:flex;gap:20px}
+.topbar-right a{font-size:.7rem;letter-spacing:.1em;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:6px;transition:color .2s}
+.topbar-right a:hover{color:#fff}
+
+/* ══════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════ */
+.nav-wrap{position:sticky;top:0;z-index:900;background:rgba(10,14,20,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:80px;max-width:1400px;margin:0 auto}
+.nav-logo{display:flex;align-items:center;gap:14px;cursor:pointer}
+.nav-logo-icon{width:42px;height:42px}
+.nav-logo-text{line-height:1.1}
+.nav-logo-name{font-family:var(--ffs);font-size:1.25rem;font-weight:600;color:var(--white);letter-spacing:.04em}
+.nav-logo-sub{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-top:1px}
+.nav-links{display:flex;list-style:none;height:80px;align-items:center;gap:4px}
+.nav-links>li{position:relative;height:80px;display:flex;align-items:center}
+.nav-links>li>a,.nav-links>li>.ndrop{padding:0 18px;font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(248,245,239,.65);cursor:pointer;height:80px;display:flex;align-items:center;gap:5px;transition:color .2s;border:none;background:none;white-space:nowrap}
+.nav-links>li>a:hover,.nav-links>li>.ndrop:hover,.nav-links>li>a.act{color:var(--gold)}
+.nav-drop{display:none;position:absolute;top:80px;left:0;background:var(--dark2);border:1px solid var(--border);min-width:230px;z-index:999;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.nav-links>li:hover .nav-drop{display:block}
+.nav-drop a{display:block;padding:12px 20px;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(248,245,239,.6);border-bottom:1px solid var(--border2);cursor:pointer;transition:all .2s}
+.nav-drop a:hover{color:var(--gold);padding-left:26px;background:rgba(201,169,110,.06)}
+.nav-drop a:last-child{border:none}
+.nav-cta{background:var(--gold3);color:var(--white)!important;padding:0 24px!important;height:38px!important;border-radius:var(--radius);font-size:.68rem!important;letter-spacing:.14em!important;transition:background .2s!important;margin-left:8px}
+.nav-cta:hover{background:var(--gold)!important;color:var(--dark)!important}
+.chevron{font-size:.55rem;opacity:.5;margin-left:2px}
+.ham{display:none;background:none;border:none;color:var(--white);cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.ham span{display:block;width:22px;height:1.5px;background:currentColor;transition:all .3s}
+
+/* ══════════════════════════════════════════
+   HERO VIDEO
+══════════════════════════════════════════ */
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden;display:flex;align-items:center}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,14,20,.85) 0%,rgba(10,14,20,.5) 50%,rgba(10,14,20,.2) 100%)}
+.hero-overlay2{position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(to top,var(--dark),transparent)}
+.hero-content{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:0 80px;width:100%}
+.hero-tag{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.hero-tag::before{content:'';display:block;width:40px;height:1px;background:var(--gold)}
+.hero-h1{font-family:var(--ffs);font-size:clamp(3rem,6vw,5.5rem);font-weight:300;line-height:1.1;color:var(--white);margin-bottom:24px}
+.hero-h1 em{font-style:italic;color:var(--gold2)}
+.hero-sub{font-size:.95rem;color:rgba(248,245,239,.7);font-weight:300;max-width:480px;line-height:1.75;margin-bottom:40px;letter-spacing:.02em}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn-gold{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--dark);padding:15px 32px;font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;border-radius:var(--radius);transition:all .25s;border:none;cursor:pointer}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,169,110,.35)}
+.btn-outline{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(201,169,110,.5);color:var(--white);padding:15px 32px;font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;border-radius:var(--radius);transition:all .25s;background:none;cursor:pointer}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(248,245,239,.4);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(201,169,110,.6),transparent);animation:scrollline 2s ease-in-out infinite}
+@keyframes scrollline{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.hero-stats{position:absolute;bottom:80px;right:80px;z-index:2;display:flex;gap:40px}
+.hero-stat{text-align:right}
+.hero-stat-num{font-family:var(--ffs);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1}
+.hero-stat-lbl{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(248,245,239,.5);margin-top:4px}
+
+/* ══════════════════════════════════════════
+   SECTIONS GÉNÉRALES
+══════════════════════════════════════════ */
+.sec{padding:100px 40px;max-width:1400px;margin:0 auto}
+.sec-full{padding:100px 0}
+.sec-tag{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.sec-tag::before{content:'';display:block;width:30px;height:1px;background:var(--gold)}
+.sec-h2{font-family:var(--ffs);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--white);line-height:1.15;margin-bottom:16px}
+.sec-h2 em{font-style:italic;color:var(--gold2)}
+.sec-desc{font-size:.9rem;color:var(--grey);font-weight:300;line-height:1.8;max-width:560px}
+.gold-line{width:50px;height:1px;background:var(--gold);margin:18px 0}
+.sec-header{text-align:center;margin-bottom:60px}
+.sec-header .gold-line{margin:18px auto}
+.sec-header .sec-desc{margin:0 auto}
+
+/* ══════════════════════════════════════════
+   CATEGORIES HOME (style magazine)
+══════════════════════════════════════════ */
+.cats-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:3px;background:var(--dark3)}
+.cat-block{position:relative;overflow:hidden;cursor:pointer;min-height:340px}
+.cat-block:first-child{grid-row:1/3}
+.cat-block img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.25,.46,.45,.94);filter:brightness(.7)}
+.cat-block:hover img{transform:scale(1.06);filter:brightness(.85)}
+.cat-block-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,14,20,.85) 0%,rgba(10,14,20,.2) 60%,transparent 100%)}
+.cat-block-content{position:absolute;bottom:0;left:0;right:0;padding:32px 36px}
+.cat-block-tag{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.cat-block-title{font-family:var(--ffs);font-size:2rem;font-weight:300;color:var(--white);line-height:1.15;margin-bottom:6px}
+.cat-block:not(:first-child) .cat-block-title{font-size:1.4rem}
+.cat-block-sub{font-size:.78rem;color:rgba(248,245,239,.6);margin-bottom:16px}
+.cat-block-from{font-size:.7rem;letter-spacing:.1em;color:var(--gold);font-weight:500}
+.cat-block-btn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid rgba(201,169,110,.4);padding-bottom:3px;transition:all .2s}
+.cat-block:hover .cat-block-btn{gap:14px;border-color:var(--gold)}
+
+/* ══════════════════════════════════════════
+   WHY US (dark section)
+══════════════════════════════════════════ */
+.why-wrap{background:var(--dark2);padding:100px 40px}
+.why-inner{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.why-img-wrap{position:relative}
+.why-img{width:100%;height:500px;object-fit:cover;border-radius:var(--radius)}
+.why-img-accent{position:absolute;bottom:-20px;right:-20px;width:200px;height:200px;background:var(--gold3);opacity:.15;border-radius:var(--radius)}
+.why-img-badge{position:absolute;top:30px;left:-20px;background:var(--dark);border:1px solid var(--border);padding:20px 24px;border-radius:var(--radius);text-align:center}
+.why-img-badge-num{font-family:var(--ffs);font-size:2.5rem;color:var(--gold);line-height:1}
+.why-img-badge-lbl{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);margin-top:4px}
+.why-features{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.why-feat{padding:20px;border:1px solid var(--border);border-radius:var(--radius);background:rgba(255,255,255,.02);transition:border-color .3s}
+.why-feat:hover{border-color:var(--gold)}
+.why-feat-icon{font-size:1.4rem;margin-bottom:10px}
+.why-feat-title{font-size:.8rem;font-weight:600;letter-spacing:.08em;color:var(--white);margin-bottom:6px}
+.why-feat-desc{font-size:.76rem;color:var(--grey);line-height:1.65}
+
+/* ══════════════════════════════════════════
+   PRODUITS GRID
+══════════════════════════════════════════ */
+.products-bg{background:var(--dark2);padding:100px 0}
+.products-bg .sec{padding:0 40px}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border2)}
+@media(max-width:1200px){.prod-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+.prod-card{background:var(--dark3);cursor:pointer;transition:background .25s;overflow:hidden}
+.prod-card:hover{background:var(--dark2)}
+.pc-img-wrap{position:relative;overflow:hidden;aspect-ratio:1/1;background:#0d1420}
+.pc-img-wrap .main-img{width:100%;height:100%;object-fit:contain;padding:12px;transition:all .4s}
+.pc-img-wrap .hover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:all .4s;transform:scale(1.06)}
+.prod-card:hover .main-img{opacity:0;transform:scale(.94)}
+.prod-card:hover .hover-img{opacity:1;transform:scale(1)}
+.pc-body{padding:20px 22px 24px}
+.pc-name{font-size:.88rem;font-weight:500;color:var(--white);margin-bottom:5px}
+.pc-price{font-family:var(--ffs);font-size:1.15rem;color:var(--gold);margin-bottom:10px;font-weight:400}
+.pc-params{display:flex;gap:14px;margin-bottom:14px}
+.pc-param{display:flex;align-items:center;gap:5px;font-size:.68rem;color:var(--grey)}
+.pc-param svg{width:12px;height:12px;fill:var(--gold);opacity:.7;flex-shrink:0}
+.pc-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--border2)}
+.pc-link{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);transition:gap .2s;display:flex;align-items:center;gap:6px}
+.pc-link:hover{gap:10px}
+.pc-btn-devis{background:var(--gold3);color:var(--dark);width:32px;height:32px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;transition:background .2s;flex-shrink:0}
+.pc-btn-devis:hover{background:var(--gold)}
+.pc-btn-devis svg{width:14px;height:14px;fill:currentColor}
+/* Cat select cards */
+.cat-select-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:50px}
+.cat-sel-card{position:relative;overflow:hidden;cursor:pointer;border-radius:var(--radius);border:1px solid var(--border);transition:border-color .3s,transform .3s}
+.cat-sel-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.cat-sel-card img{width:100%;height:220px;object-fit:cover;filter:brightness(.75);transition:filter .4s}
+.cat-sel-card:hover img{filter:brightness(.9)}
+.cat-sel-info{padding:18px 20px 20px}
+.cat-sel-name{font-size:.95rem;font-weight:500;color:var(--white);margin-bottom:4px}
+.cat-sel-sub{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.cat-sel-from{font-size:.78rem;color:var(--grey);margin-bottom:12px}
+.cat-sel-btn{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:6px;transition:gap .2s}
+.cat-sel-card:hover .cat-sel-btn{gap:12px}
+
+/* ══════════════════════════════════════════
+   BANNIÈRE PAGE (hero de sous-page)
+══════════════════════════════════════════ */
+.page-banner{position:relative;height:380px;overflow:hidden}
+.page-banner img{width:100%;height:100%;object-fit:cover;filter:brightness(.55)}
+.page-banner-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,14,20,.7),rgba(10,14,20,.2))}
+.page-banner-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:50px 60px}
+.page-banner-tag{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.page-banner h1{font-family:var(--ffs);font-size:clamp(2rem,4vw,3.5rem);font-weight:300;color:var(--white);line-height:1.15;margin-bottom:10px}
+.page-banner p{font-size:.9rem;color:rgba(248,245,239,.7);font-weight:300}
+.breadcrumb{padding:12px 60px;background:var(--dark3);border-bottom:1px solid var(--border2);font-size:.7rem;color:var(--grey)}
+.breadcrumb a{color:var(--gold);cursor:pointer;transition:color .2s}
+.breadcrumb a:hover{color:var(--gold2)}
+.breadcrumb span{margin:0 6px;opacity:.4}
+
+/* ══════════════════════════════════════════
+   FICHE PRODUIT COMPLÈTE (PDP)
+══════════════════════════════════════════ */
+.pdp-bg{background:var(--dark);padding:60px 0 100px}
+.pdp-inner{max-width:1200px;margin:0 auto;padding:0 40px}
+.pdp-top{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:start;margin-bottom:60px}
+
+/* Galerie */
+.pdp-gallery{}
+.pdp-main-wrap{position:relative;background:var(--dark3);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden;height:440px;margin-bottom:10px;display:flex;align-items:center;justify-content:center}
+.pdp-main-img{width:100%;height:100%;object-fit:contain;padding:20px;transition:opacity .25s}
+.pdp-thumbs{display:flex;gap:8px;flex-wrap:wrap}
+.pdp-thumb{width:80px;height:80px;background:var(--dark3);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:border-color .2s;flex-shrink:0}
+.pdp-thumb img{width:100%;height:100%;object-fit:cover;transition:opacity .2s}
+.pdp-thumb:hover,.pdp-thumb.active{border-color:var(--gold)}
+.pdp-thumb.active img,.pdp-thumb:hover img{opacity:1}
+
+/* Infos */
+.pdp-info{}
+.pdp-cat-tag{display:inline-block;border:1px solid var(--border);color:var(--gold);font-size:.62rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+.pdp-h1{font-family:var(--ffs);font-size:2.4rem;font-weight:300;color:var(--white);line-height:1.15;margin-bottom:10px}
+.pdp-price-wrap{margin-bottom:20px}
+.pdp-price{font-family:var(--ffs);font-size:2rem;color:var(--gold);font-weight:400;line-height:1}
+.pdp-price-note{font-size:.7rem;color:var(--grey);margin-top:4px;letter-spacing:.06em}
+.pdp-params{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border2);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden;margin:20px 0}
+.pdp-param{background:var(--dark3);padding:16px 10px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.pdp-param-icon{font-size:1.3rem}
+.pdp-param-val{font-size:.9rem;font-weight:600;color:var(--white)}
+.pdp-param-lbl{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+.pdp-desc{font-size:.86rem;color:var(--grey);line-height:1.8;margin-bottom:24px}
+
+/* Couleurs interactives */
+.pdp-colors-section{margin-bottom:20px}
+.pdp-color-title{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);margin-bottom:10px}
+.pdp-color-row{display:flex;gap:10px;flex-wrap:wrap}
+.pdp-color-btn{display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;opacity:.5;transition:opacity .2s}
+.pdp-color-btn.active,.pdp-color-btn:hover{opacity:1}
+.pdp-color-dot{width:32px;height:32px;border-radius:50%;border:2px solid transparent;box-shadow:0 2px 8px rgba(0,0,0,.4);transition:border-color .2s}
+.pdp-color-btn.active .pdp-color-dot{border-color:var(--gold)}
+.pdp-color-name{font-size:.58rem;color:var(--grey);white-space:nowrap;font-weight:500}
+
+/* CTA */
+.pdp-cta{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.pdp-btn-primary{background:var(--gold);color:var(--dark);border:none;padding:16px;border-radius:var(--radius);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:10px}
+.pdp-btn-primary:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,169,110,.3)}
+.pdp-btn-sec{background:transparent;color:var(--white);border:1px solid var(--border);padding:15px;border-radius:var(--radius);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.pdp-btn-sec:hover{border-color:var(--gold);color:var(--gold)}
+
+/* Tabs */
+.pdp-tabs{display:flex;gap:0;border-bottom:1px solid var(--border2);margin-bottom:30px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.pdp-tab{padding:14px 24px;font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .2s}
+.pdp-tab.active,.pdp-tab:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.pdp-tab-content{display:none}.pdp-tab-content.active{display:block}
+
+/* Specs table */
+.pdp-specs-table{width:100%;border-collapse:collapse}
+.pdp-specs-table tr{border-bottom:1px solid var(--border2)}
+.pdp-specs-table td{padding:11px 14px;font-size:.82rem;vertical-align:top}
+.pdp-specs-table td:first-child{font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);width:35%;background:rgba(255,255,255,.02)}
+
+/* Features */
+.pdp-features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pdp-feat{background:var(--dark3);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden;transition:border-color .3s}
+.pdp-feat:hover{border-color:var(--border)}
+.pdp-feat img{width:100%;height:130px;object-fit:cover;opacity:.85}
+.pdp-feat-body{padding:14px 16px}
+.pdp-feat-title{font-size:.8rem;font-weight:600;color:var(--white);margin-bottom:6px}
+.pdp-feat-desc{font-size:.74rem;color:var(--grey);line-height:1.6}
+
+/* Scene / couleurs jardin */
+.pdp-scene-wrap{background:var(--dark3);border:1px solid var(--border2);border-radius:var(--radius);padding:30px}
+.pdp-scene-title{font-family:var(--ffs);font-size:1.4rem;font-weight:300;color:var(--white);text-align:center;margin-bottom:24px}
+.pdp-scene-img-wrap{text-align:center;margin-bottom:24px;min-height:300px;display:flex;align-items:center;justify-content:center}
+.pdp-scene-img{max-width:560px;width:100%;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.5);transition:opacity .3s}
+.pdp-scene-colors{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.pdp-scene-color{display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;padding:10px 16px;border-radius:var(--radius);border:1px solid transparent;transition:all .2s}
+.pdp-scene-color:hover,.pdp-scene-color.active{border-color:var(--border);background:rgba(255,255,255,.04)}
+.pdp-scene-color .dot{width:38px;height:38px;border-radius:50%;box-shadow:0 2px 12px rgba(0,0,0,.5);border:2px solid transparent;transition:border-color .2s}
+.pdp-scene-color.active .dot{border-color:var(--gold)}
+.pdp-scene-color span{font-size:.65rem;color:var(--grey);font-weight:500}
+
+/* Scenarios */
+.pdp-scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pdp-scenarios img{width:100%;height:220px;object-fit:cover;border-radius:var(--radius);opacity:.85;transition:opacity .3s,transform .3s;cursor:pointer}
+.pdp-scenarios img:hover{opacity:1;transform:scale(1.02)}
+
+/* ══════════════════════════════════════════
+   TESTIMONIALS / STATS
+══════════════════════════════════════════ */
+.stats-wrap{background:var(--dark2);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
+.stats-inner{max-width:1400px;margin:0 auto;padding:60px 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border2)}
+.stat-block{background:var(--dark2);padding:40px 30px;text-align:center}
+.stat-num{font-family:var(--ffs);font-size:3rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:6px}
+.stat-lbl{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--grey)}
+
+/* ══════════════════════════════════════════
+   VIDÉO SECTION
+══════════════════════════════════════════ */
+.video-section{background:var(--dark3);padding:100px 40px}
+.video-inner{max-width:1100px;margin:0 auto}
+.video-embed{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.7);border:1px solid var(--border)}
+.video-embed::before{content:'';display:block;padding-top:56.25%}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-local-wrap{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.7)}
+.video-local{width:100%;display:block;border-radius:var(--radius)}
+
+/* ══════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════ */
+.faq-list{max-width:740px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border2)}
+.faq-q{padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:.88rem;font-weight:500;color:var(--white);transition:color .2s;gap:16px}
+.faq-q:hover{color:var(--gold)}
+.faq-q-icon{width:24px;height:24px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.9rem;color:var(--gold);transition:transform .3s,background .2s}
+.faq-q.open .faq-q-icon{transform:rotate(45deg);background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.faq-a{display:none;padding:0 0 20px;font-size:.84rem;color:var(--grey);line-height:1.8}
+.faq-a.show{display:block}
+
+/* ══════════════════════════════════════════
+   CONTACT PAGE
+══════════════════════════════════════════ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:70px;max-width:1100px;margin:0 auto;padding:0 40px}
+.contact-info-title{font-family:var(--ffs);font-size:1.8rem;font-weight:300;color:var(--white);margin-bottom:24px}
+.contact-item{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start}
+.contact-icon{width:40px;height:40px;background:rgba(201,169,110,.1);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:18px;height:18px;fill:var(--gold)}
+.contact-item p{font-size:.82rem;color:var(--grey);line-height:1.7}
+.contact-item p strong{display:block;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--white);margin-bottom:3px}
+.contact-item a{color:var(--gold);transition:color .2s}
+.contact-item a:hover{color:var(--gold2)}
+.contact-zone{background:rgba(201,169,110,.06);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-top:24px}
+.contact-zone h4{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.contact-zone p{font-size:.82rem;color:var(--grey);line-height:1.7}
+/* Form */
+.contact-form-title{font-family:var(--ffs);font-size:1.8rem;font-weight:300;color:var(--white);margin-bottom:28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:8px}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:var(--dark3);border:1px solid var(--border2);border-radius:var(--radius);padding:13px 16px;font-family:var(--ff);font-size:.84rem;color:var(--white);transition:border-color .2s}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--gold)}
+.form-group textarea{min-height:130px;resize:vertical}
+.form-group select option{background:var(--dark3);color:var(--white)}
+
+/* ══════════════════════════════════════════
+   ABOUT PAGE
+══════════════════════════════════════════ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto;padding:0 40px}
+.about-img-wrap{position:relative}
+.about-img{width:100%;height:520px;object-fit:cover;border-radius:var(--radius)}
+.about-img-badge{position:absolute;bottom:-24px;right:-24px;background:var(--gold3);padding:24px;border-radius:var(--radius);text-align:center;width:140px}
+.about-badge-num{font-family:var(--ffs);font-size:2.4rem;color:var(--white);line-height:1}
+.about-badge-lbl{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}
+.cert-list{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.cert-badge{background:rgba(201,169,110,.08);border:1px solid var(--border);padding:7px 14px;border-radius:20px;font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+footer{background:var(--dark2);border-top:1px solid var(--border2)}
+.footer-top{max-width:1400px;margin:0 auto;padding:70px 40px 50px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:50px}
+.footer-logo-img{height:44px;margin-bottom:16px;opacity:.85}
+.footer-logo-name{font-family:var(--ffs);font-size:1.2rem;color:var(--white);margin-bottom:4px}
+.footer-logo-sub{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.footer-desc{font-size:.78rem;color:var(--grey);line-height:1.8;margin-bottom:20px}
+.footer-contact-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer-contact-row svg{width:14px;height:14px;fill:var(--gold);flex-shrink:0}
+.footer-contact-row a,.footer-contact-row span{font-size:.76rem;color:var(--grey);transition:color .2s}
+.footer-contact-row a:hover{color:var(--gold)}
+.footer-col h4{font-size:.65rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:.78rem;color:var(--grey);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:6px}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-col ul li a::before{content:'—';font-size:.6rem;color:var(--gold3);opacity:.6}
+.footer-bottom{border-top:1px solid var(--border2);padding:20px 40px;max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:.7rem;color:rgba(154,163,176,.5)}
+
+/* Floating devis btn */
+.float-cta{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:800}
+.float-cta button{background:var(--gold3);color:var(--white);border:none;writing-mode:vertical-rl;padding:18px 10px;font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .2s;display:flex;align-items:center;gap:8px}
+.float-cta button:hover{background:var(--gold)}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════ */
+@media(max-width:1100px){
+  .cats-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto}
+  .cat-block:first-child{grid-row:auto}
+  .why-inner{grid-template-columns:1fr;gap:50px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+  .pdp-top{grid-template-columns:1fr;gap:40px}
+  .pdp-features{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .hero-content{padding:0 30px}
+  .hero-stats{right:30px;bottom:50px;gap:24px}
+  .hero-stat-num{font-size:1.6rem}
+  .nav-links{display:none}
+  .ham{display:flex}
+  .topbar{padding:6px 20px}
+  .nav-inner{padding:0 20px}
+  .cats-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;padding:0 24px}
+  .about-grid{grid-template-columns:1fr;padding:0 24px}
+  .cat-select-wrap{grid-template-columns:1fr}
+  .pdp-scenarios{grid-template-columns:1fr 1fr}
+  .pdp-features{grid-template-columns:1fr 1fr}
+  .pdp-params{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  .sec{padding:60px 24px}
+  .video-section{padding:60px 24px}
+  .page-banner{height:260px}
+  .page-banner-content{padding:30px 24px}
+  .footer-top{grid-template-columns:1fr;padding:40px 24px}
+  .footer-bottom{padding:16px 24px;flex-direction:column;gap:8px;text-align:center}
+}
+
+.of-swatch{display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;transition:transform .2s;user-select:none}
+.of-swatch:hover{transform:translateY(-2px)}
+.of-dot{width:44px;height:44px;border-radius:50%;border:3px solid transparent;box-shadow:0 3px 12px rgba(0,0,0,.5);transition:all .25s}
+.of-swatch.active .of-dot,.of-swatch:hover .of-dot{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,169,110,.25),0 3px 12px rgba(0,0,0,.5)}
+.of-lbl{font-size:.62rem;color:var(--grey);white-space:nowrap;letter-spacing:.04em;font-weight:500}
+.of-swatch.active .of-lbl{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    🌍 Zone&nbsp;: <strong>France · Belgique · Suisse · Luxembourg</strong>
+    <span style="opacity:.5">|</span>
+    Autres pays : <a href="mailto:valentin.gauthier.groupe@gmail.com" style="color:rgba(255,255,255,.85);text-decoration:underline">nous contacter</a>
+  </div>
+  <div class="topbar-right">
+    <a href="tel:+33782614867">
+      <svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      +33 7 82 61 48 67
+    </a>
+    <a href="mailto:valentin.gauthier.groupe@gmail.com">
+      <svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Email
+    </a>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav-wrap">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="goPage('home')">
+      <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="20" stroke="#c9a96e" stroke-width="1"/>
+        <path d="M21 8 C21 8 14 16 14 21 C14 26 17 30 21 30 C25 30 28 26 28 21 C28 16 21 8 21 8Z" fill="none" stroke="#c9a96e" stroke-width="1.2"/>
+        <path d="M10 22 Q21 18 32 22" stroke="#c9a96e" stroke-width="1" fill="none"/>
+        <path d="M12 25 Q21 21 30 25" stroke="#c9a96e" stroke-width=".8" fill="none" opacity=".5"/>
+      </svg>
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">Valentin &amp; Gauthier</div>
+        <div class="nav-logo-sub">Wellness · Bien-être Haut de Gamme</div>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a onclick="goPage('home')" style="cursor:pointer">Accueil</a></li>
+      <li>
+        <span class="ndrop">Produits <span class="chevron">▾</span></span>
+        <div class="nav-drop">
+          <a onclick="goPage('hottub')">Jacuzzi / Hot Tub</a>
+          <a onclick="goPage('swimspa')">Piscines à Nage</a>
+          <a onclick="goPage('sauna')">Saunas</a>
+          <a onclick="goPage('cold')">Bain Froid</a>
+          <a style="border-top:1px solid rgba(201,169,110,.2);padding-top:14px;color:rgba(201,169,110,.6);font-size:.62rem" onclick="goPage('hottub-luxury')">↳ Luxury Hot Tub</a>
+          <a style="color:rgba(201,169,110,.6);font-size:.62rem" onclick="goPage('hottub-patio')">↳ Patio Hot Tub</a>
+          <a style="color:rgba(201,169,110,.6);font-size:.62rem" onclick="goPage('hottub-round')">↳ Round Series</a>
+          <a style="color:rgba(201,169,110,.6);font-size:.62rem" onclick="goPage('swimspa-endless')">↳ Piscine Endless</a>
+          <a style="color:rgba(201,169,110,.6);font-size:.62rem" onclick="goPage('swimspa-fitness')">↳ Piscine Fitness</a>
+          <a style="color:rgba(201,169,110,.6);font-size:.62rem" onclick="goPage('swimspa-compact')">↳ Piscine Compacte</a>
+        </div>
+      </li>
+      <li><a onclick="goPage('about')" style="cursor:pointer">À Propos</a></li>
+      <li><a onclick="goPage('contact')" style="cursor:pointer">Contact</a></li>
+      <li><a class="nav-cta btn-gold" onclick="goPage('contact')" style="cursor:pointer">Devis Gratuit</a></li>
+    </ul>
+    <button class="ham" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : ACCUEIL
+══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO VIDÉO -->
+  <div class="hero">
+    <img class="hero-video" 
+      src="https://www.oceanfuturespas.com/wp-content/uploads/2025/03/OF-5003Pro-9.jpg" 
+      alt="Jacuzzi haut de gamme extérieur nuit"
+      style="object-fit:cover;filter:brightness(.75)"/>
+    <div class="hero-overlay"></div>
+    <div class="hero-overlay2"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Votre Partenaire Bien-Être</div>
+      <h1 class="hero-h1">L'Art du<br/><em>Bien-Être</em><br/>à Domicile</h1>
+      <p class="hero-sub">Jacuzzis, piscines à nage, saunas et bains froids haut de gamme — sélectionnés, livrés et installés par nos experts.</p>
+      <div class="hero-btns">
+        <button class="btn-gold" onclick="goPage('hottub')">Explorer nos produits →</button>
+        <button class="btn-outline" onclick="goPage('contact')">Demander un devis</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">200+</div><div class="hero-stat-lbl">Modèles</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">4</div><div class="hero-stat-lbl">Pays</div></div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Découvrir
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-wrap">
+    <div class="stats-inner">
+      <div class="stat-block"><div class="stat-num">200+</div><div class="stat-lbl">Modèles disponibles</div></div>
+      <div class="stat-block"><div class="stat-num">4</div><div class="stat-lbl">Pays couverts</div></div>
+      <div class="stat-block"><div class="stat-num">100%</div><div class="stat-lbl">Satisfaction client</div></div>
+      <div class="stat-block"><div class="stat-num">24h</div><div class="stat-lbl">Délai de réponse</div></div>
+    </div>
+  </div>
+
+  <!-- CATÉGORIES MAGAZINE GRID -->
+  <div class="sec-full">
+    <div class="sec" style="padding-bottom:30px">
+      <div class="sec-tag">Nos Univers</div>
+      <h2 class="sec-h2">Découvrez nos<br/><em>gammes premium</em></h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="cats-grid">
+      <div class="cat-block" onclick="goPage('hottub')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/03/OF-5003Pro-9.jpg" alt="Jacuzzi haut de gamme outdoor" loading="lazy"/>
+        <div class="cat-block-overlay"></div>
+        <div class="cat-block-content">
+          <div class="cat-block-tag">Jacuzzi / Hot Tub</div>
+          <div class="cat-block-title">Spas &amp;<br/>Jacuzzis</div>
+          <div class="cat-block-sub">2 à 6 personnes · À partir de 2 200 €</div>
+          <div class="cat-block-btn">Explorer la gamme ↗</div>
+        </div>
+      </div>
+      <div class="cat-block" onclick="goPage('swimspa')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1001U-3.jpg" alt="Piscine à nage contre-courant" loading="lazy"/>
+        <div class="cat-block-overlay"></div>
+        <div class="cat-block-content">
+          <div class="cat-block-tag">Piscine à Nage</div>
+          <div class="cat-block-title">Piscines à Nage</div>
+          <div class="cat-block-sub">4m à 12m · À partir de 8 110 €</div>
+          <div class="cat-block-btn">Explorer la gamme ↗</div>
+        </div>
+      </div>
+      <div class="cat-block" onclick="goPage('sauna')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/traditional-sauna-rooms.jpg" alt="Sauna infrarouge traditionnel" loading="lazy"/>
+        <div class="cat-block-overlay"></div>
+        <div class="cat-block-content">
+          <div class="cat-block-tag">Sauna</div>
+          <div class="cat-block-title">Saunas</div>
+          <div class="cat-block-sub">Infrarouge &amp; Traditionnel · À partir de 2 020 €</div>
+          <div class="cat-block-btn">Explorer la gamme ↗</div>
+        </div>
+      </div>
+      <div class="cat-block" onclick="goPage('cold')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/cold.jpg" alt="Bain froid cryothérapie" loading="lazy"/>
+        <div class="cat-block-overlay"></div>
+        <div class="cat-block-content">
+          <div class="cat-block-tag">Bain Froid</div>
+          <div class="cat-block-title">Bains Froids</div>
+          <div class="cat-block-sub">Cryothérapie &amp; Récupération · À partir de 2 200 €</div>
+          <div class="cat-block-btn">Explorer la gamme ↗</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- WHY US -->
+  <div class="why-wrap">
+    <div class="why-inner">
+      <div class="why-img-wrap">
+        <img class="why-img" src="https://www.oceanfuturespas.com/wp-content/uploads/2024/11/OF-5001Pro-50.jpg" alt="Jacuzzi 5 personnes extérieur" loading="lazy"/>
+        <div class="why-img-accent"></div>
+        <div class="why-img-badge">
+          <div class="why-img-badge-num">200+</div>
+          <div class="why-img-badge-lbl">Modèles<br/>disponibles</div>
+        </div>
+      </div>
+      <div>
+        <div class="sec-tag">Notre Engagement</div>
+        <h2 class="sec-h2">Votre <em>partenaire</em><br/>bien-être</h2>
+        <div class="gold-line"></div>
+        <p class="sec-desc" style="margin-top:16px">Nous sélectionnons avec exigence les meilleurs équipements bien-être du marché — testés, certifiés, garantis. Notre équipe prend en charge chaque étape, du conseil initial à l'installation dans votre jardin.</p>
+        <div class="why-features">
+          <div class="why-feat"><div class="why-feat-icon">🏆</div><div class="why-feat-title">Qualité Certifiée</div><div class="why-feat-desc">CE, CB, ETL. Matériaux premium résistants aux UV et intempéries.</div></div>
+          <div class="why-feat"><div class="why-feat-icon">🚚</div><div class="why-feat-title">Livraison &amp; Installation</div><div class="why-feat-desc">Prise en charge complète jusqu'à votre domicile.</div></div>
+          <div class="why-feat"><div class="why-feat-icon">🛠️</div><div class="why-feat-title">SAV &amp; Garantie</div><div class="why-feat-desc">Suivi après-vente attentif et garantie fabricant.</div></div>
+          <div class="why-feat"><div class="why-feat-icon">💬</div><div class="why-feat-title">Conseil Expert</div><div class="why-feat-desc">Accompagnement personnalisé pour choisir le produit idéal.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="sec" style="max-width:900px;margin:0 auto">
+    <div class="sec-header">
+      <div class="sec-tag" style="justify-content:center">Questions Fréquentes</div>
+      <h2 class="sec-h2">Tout ce que vous<br/>souhaitez <em>savoir</em></h2>
+      <div class="gold-line" style="margin:16px auto"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="tfaq(this)">Livrez-vous dans toute la France ? <span class="faq-q-icon">+</span></div>
+        <div class="faq-a">Oui, nous livrons en France métropolitaine, en Belgique, en Suisse et au Luxembourg. Pour d'autres destinations, contactez-nous directement.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="tfaq(this)">Quels sont les délais de livraison ? <span class="faq-q-icon">+</span></div>
+        <div class="faq-a">En général, comptez 4 à 8 semaines après confirmation de commande selon le modèle et la destination. Nous vous tenons informé à chaque étape.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="tfaq(this)">L'installation est-elle incluse ? <span class="faq-q-icon">+</span></div>
+        <div class="faq-a">L'installation peut être incluse selon votre localisation. Notre équipe technique assure la mise en service complète et vous forme à l'utilisation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="tfaq(this)">Quelle garantie pour mes équipements ? <span class="faq-q-icon">+</span></div>
+        <div class="faq-a">Tous nos produits bénéficient de la garantie fabricant. Contactez-nous pour les détails selon le modèle. Notre SAV reste disponible après installation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="tfaq(this)">Comment entretenir mon jacuzzi ou ma piscine à nage ? <span class="faq-q-icon">+</span></div>
+        <div class="faq-a">Nous vous fournissons un guide complet à la livraison. En résumé : vérification hebdomadaire du pH et du chlore, nettoyage mensuel du filtre, vidange 2 à 4 fois par an selon l'usage.</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-home -->
+
+<!-- ══════════════════════════════════════════
+     PAGE : JACUZZI LANDING
+══════════════════════════════════════════ -->
+<div class="page" id="page-hottub">
+  <div class="page-banner">
+    <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/03/1920.jpg" alt="Jacuzzi haut de gamme extérieur" loading="lazy"/>
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <div class="page-banner-tag">Jacuzzi / Hot Tub</div>
+      <h1>Jacuzzis &amp; Spas</h1>
+      <p>Sélection haut de gamme — de 2 à 6+ personnes</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span>Jacuzzi / Hot Tub</div>
+  <div class="sec">
+    <div class="sec-header">
+      <div class="sec-tag" style="justify-content:center">Nos Séries</div>
+      <h2 class="sec-h2">Quelle gamme<br/>vous <em>correspond</em> ?</h2>
+      <div class="gold-line" style="margin:16px auto"></div>
+    </div>
+    <div class="cat-select-wrap">
+      <div class="cat-sel-card" onclick="goPage('hottub-luxury')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/Surpass-2.jpg" alt="Luxury Hot Tub haut de gamme" loading="lazy"/>
+        <div class="cat-sel-info">
+          <div class="cat-sel-name">Luxury Hot Tub</div>
+          <div class="cat-sel-sub">Série Prestige · 2–6 personnes</div>
+          <div class="cat-sel-from">À partir de <strong style="color:var(--gold)">2 200 €</strong></div>
+          <div class="cat-sel-btn">Voir les modèles →</div>
+        </div>
+      </div>
+      <div class="cat-sel-card" onclick="goPage('hottub-patio')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/Home-3.jpg" alt="Patio Hot Tub compact" loading="lazy"/>
+        <div class="cat-sel-info">
+          <div class="cat-sel-name">Patio Hot Tub</div>
+          <div class="cat-sel-sub">Série Patio · Compact &amp; Élégant</div>
+          <div class="cat-sel-from">À partir de <strong style="color:var(--gold)">2 200 €</strong></div>
+          <div class="cat-sel-btn">Voir les modèles →</div>
+        </div>
+      </div>
+      <div class="cat-sel-card" onclick="goPage('hottub-round')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/04/OF-R001-scaled.jpg" alt="Jacuzzi rond design" loading="lazy"/>
+        <div class="cat-sel-info">
+          <div class="cat-sel-name">Round Series</div>
+          <div class="cat-sel-sub">Forme Ronde · Design Unique</div>
+          <div class="cat-sel-from">À partir de <strong style="color:var(--gold)">3 580 €</strong></div>
+          <div class="cat-sel-btn">Voir les modèles →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : LUXURY HOT TUB GRID
+══════════════════════════════════════════ -->
+<div class="page" id="page-hottub-luxury">
+  <div class="page-banner">
+    <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/03/1920.jpg" alt="Luxury Hot Tub" loading="lazy"/>
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <div class="page-banner-tag">Jacuzzi / Hot Tub</div>
+      <h1>Luxury Hot Tub</h1>
+      <p>Série Prestige — de 2 à 6 personnes</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('hottub')">Jacuzzi</a><span>›</span>Luxury Hot Tub</div>
+  <div class="products-bg">
+    <div class="sec">
+      <p style="font-size:.82rem;color:var(--grey);margin-bottom:30px;letter-spacing:.04em">Cliquez sur un modèle pour accéder à la fiche produit complète</p>
+      <div class="prod-grid" id="grid-luxury"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : PATIO HOT TUB GRID
+══════════════════════════════════════════ -->
+<div class="page" id="page-hottub-patio">
+  <div class="page-banner">
+    <img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/Home-3.jpg" alt="Patio Hot Tub" loading="lazy"/>
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <div class="page-banner-tag">Jacuzzi / Hot Tub</div>
+      <h1>Patio Hot Tub</h1>
+      <p>Compact, élégant, parfait pour terrasse ou balcon</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('hottub')">Jacuzzi</a><span>›</span>Patio Hot Tub</div>
+  <div class="products-bg">
+    <div class="sec">
+      <div class="prod-grid" id="grid-patio"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : ROUND SERIES
+══════════════════════════════════════════ -->
+<div class="page" id="page-hottub-round">
+  <div class="page-banner">
+    <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/04/OF-R001-scaled.jpg" alt="Round Series jacuzzi rond" loading="lazy"/>
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <div class="page-banner-tag">Jacuzzi / Hot Tub</div>
+      <h1>Round Series</h1>
+      <p>Forme circulaire — Design &amp; convivialité</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('hottub')">Jacuzzi</a><span>›</span>Round Series</div>
+  <div class="products-bg">
+    <div class="sec">
+      <div class="prod-grid" id="grid-round"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGES PRODUITS JACUZZI (générées par JS)
+══════════════════════════════════════════ -->
+<div id="jacuzzi-product-pages"></div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : PISCINES LANDING
+══════════════════════════════════════════ -->
+<div class="page" id="page-swimspa">
+  <div class="page-banner">
+    <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1202U-4.jpg" alt="Piscine à nage contre-courant extérieure" loading="lazy"/>
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <div class="page-banner-tag">Piscine à Nage · Spa de Nage</div>
+      <h1>Piscines à Nage</h1>
+      <p>Nage contre-courant, fitness et détente — de 4m à 12m</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span>Piscines à Nage</div>
+  <div class="sec">
+    <div class="sec-header">
+      <div class="sec-tag" style="justify-content:center">Nos Gammes</div>
+      <h2 class="sec-h2">Choisissez votre<br/><em>piscine à nage</em></h2>
+      <div class="gold-line" style="margin:16px auto"></div>
+    </div>
+    <div class="cat-select-wrap">
+      <div class="cat-sel-card" onclick="goPage('swimspa-endless')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1202U-4.jpg" alt="Piscine endless nage infinie" loading="lazy"/>
+        <div class="cat-sel-info">
+          <div class="cat-sel-name">Piscine Endless</div>
+          <div class="cat-sel-sub">Nage sans fin · 10–12m</div>
+          <div class="cat-sel-from">À partir de <strong style="color:var(--gold)">18 730 €</strong></div>
+          <div class="cat-sel-btn">Voir les modèles →</div>
+        </div>
+      </div>
+      <div class="cat-sel-card" onclick="goPage('swimspa-fitness')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1001U-3.jpg" alt="Piscine fitness aquagym" loading="lazy"/>
+        <div class="cat-sel-info">
+          <div class="cat-sel-name">Piscine Fitness</div>
+          <div class="cat-sel-sub">Sport &amp; Performance · 4–10m</div>
+          <div class="cat-sel-from">À partir de <strong style="color:var(--gold)">8 110 €</strong></div>
+          <div class="cat-sel-btn">Voir les modèles →</div>
+        </div>
+      </div>
+      <div class="cat-sel-card" onclick="goPage('swimspa-compact')">
+        <img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/03/OF-5003Pro-9.jpg" alt="Piscine compacte spa intégré" loading="lazy"/>
+        <div class="cat-sel-info">
+          <div class="cat-sel-name">Piscine Compacte</div>
+          <div class="cat-sel-sub">Nage + Espace Spa · 6–8m</div>
+          <div class="cat-sel-from">À partir de <strong style="color:var(--gold)">8 550 €</strong></div>
+          <div class="cat-sel-btn">Voir les modèles →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page" id="page-swimspa-endless">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1202U-4.jpg" alt="Piscine endless" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Piscine à Nage</div><h1>Piscine Endless</h1><p>Nage contre-courant infinie · 10–12m</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('swimspa')">Piscines</a><span>›</span>Endless</div>
+  <div class="products-bg"><div class="sec"><div class="prod-grid" id="grid-endless"></div></div></div>
+</div>
+<div class="page" id="page-swimspa-fitness">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1001U-3.jpg" alt="Piscine fitness" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Piscine à Nage</div><h1>Piscine Fitness</h1><p>Sport, performance &amp; récupération · 4–10m</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('swimspa')">Piscines</a><span>›</span>Fitness</div>
+  <div class="products-bg"><div class="sec"><div class="prod-grid" id="grid-fitness"></div></div></div>
+</div>
+<div class="page" id="page-swimspa-compact">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1001U-3.jpg" alt="Piscine compacte spa" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Piscine à Nage</div><h1>Piscine Compacte</h1><p>Double bassin nage + spa · 6–8m</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('swimspa')">Piscines</a><span>›</span>Compacte</div>
+  <div class="products-bg"><div class="sec"><div class="prod-grid" id="grid-compact"></div></div></div>
+</div>
+<div id="pool-product-pages"></div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : SAUNAS
+══════════════════════════════════════════ -->
+<div class="page" id="page-sauna">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/Sauna-room.jpg" alt="Sauna haut de gamme" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Sauna</div><h1>Saunas</h1><p>Infrarouge, traditionnel &amp; vapeur</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span>Saunas</div>
+  <div class="sec">
+    <div class="sec-header"><div class="sec-tag" style="justify-content:center">Nos Saunas</div><h2 class="sec-h2">Votre rituel<br/><em>bien-être</em></h2><div class="gold-line" style="margin:16px auto"></div></div>
+    <div class="cat-select-wrap">
+      <div class="cat-sel-card" onclick="goPage('sauna-infrared')"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/infrared-sauna-rooms-1.jpg" alt="Sauna infrarouge bienfaits" loading="lazy"/><div class="cat-sel-info"><div class="cat-sel-name">Sauna Infrarouge</div><div class="cat-sel-sub">Chaleur douce · 1–4 personnes</div><div class="cat-sel-from">À partir de <strong style="color:var(--gold)">2 020 €</strong></div><div class="cat-sel-btn">Voir les modèles →</div></div></div>
+      <div class="cat-sel-card" onclick="goPage('sauna-traditional')"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/traditional-sauna-rooms.jpg" alt="Sauna finlandais traditionnel" loading="lazy"/><div class="cat-sel-info"><div class="cat-sel-name">Sauna Traditionnel</div><div class="cat-sel-sub">Vapeur finlandaise · 2–6 pers.</div><div class="cat-sel-from">À partir de <strong style="color:var(--gold)">2 530 €</strong></div><div class="cat-sel-btn">Voir les modèles →</div></div></div>
+      <div class="cat-sel-card" onclick="goPage('sauna-steam')"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/01/sauna-accessories.jpeg" alt="Sauna vapeur hammam" loading="lazy"/><div class="cat-sel-info"><div class="cat-sel-name">Sauna Vapeur &amp; Combo</div><div class="cat-sel-sub">Hammam + douche · 1–4 pers.</div><div class="cat-sel-from">À partir de <strong style="color:var(--gold)">2 750 €</strong></div><div class="cat-sel-btn">Voir les modèles →</div></div></div>
+    </div>
+  </div>
+</div>
+<div class="page" id="page-sauna-infrared">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/infrared-sauna-rooms-1.jpg" alt="Sauna infrarouge" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Sauna</div><h1>Sauna Infrarouge</h1><p>Chaleur douce et pénétrante · Gamme YL</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('sauna')">Saunas</a><span>›</span>Infrarouge</div>
+  <div class="products-bg"><div class="sec"><div class="prod-grid" id="grid-sauna-ir"></div></div></div>
+</div>
+<div class="page" id="page-sauna-traditional">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/traditional-sauna-rooms.jpg" alt="Sauna traditionnel" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Sauna</div><h1>Sauna Traditionnel</h1><p>L'expérience finlandaise authentique</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('sauna')">Saunas</a><span>›</span>Traditionnel</div>
+  <div class="products-bg"><div class="sec"><div class="prod-grid" id="grid-sauna-trad"></div></div></div>
+</div>
+<div class="page" id="page-sauna-steam">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/01/sauna-accessories.jpeg" alt="Sauna vapeur" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Sauna</div><h1>Sauna Vapeur &amp; Combo</h1><p>Hammam, vapeur et douche intégrée</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('sauna')">Saunas</a><span>›</span>Vapeur</div>
+  <div class="products-bg"><div class="sec"><div class="prod-grid" id="grid-sauna-steam"></div></div></div>
+</div>
+<div id="sauna-product-pages"></div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : BAIN FROID
+══════════════════════════════════════════ -->
+<div class="page" id="page-cold">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/12/cold.jpg" alt="Bain froid cryothérapie" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Bain Froid · Cryothérapie</div><h1>Bains Froids</h1><p>Récupération, performance &amp; longévité</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span>Bain Froid</div>
+  <div class="products-bg"><div class="sec">
+    <div class="sec-header"><div class="sec-tag" style="justify-content:center">Cryothérapie</div><h2 class="sec-h2">La <em>récupération</em><br/>par le froid</h2><div class="gold-line" style="margin:16px auto"></div></div>
+    <div class="prod-grid" id="grid-cold" style="grid-template-columns:repeat(3,1fr)"></div>
+  </div></div>
+</div>
+<div id="cold-product-pages"></div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : À PROPOS
+══════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2025/03/OF-5003Pro-9.jpg" alt="Bien-être haut de gamme extérieur" loading="lazy" style="filter:brightness(.55)"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Notre Histoire</div><h1>Qui Sommes-Nous ?</h1><p>Votre partenaire bien-être de confiance</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span>À Propos</div>
+  <div class="sec">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img class="about-img" src="https://www.oceanfuturespas.com/wp-content/uploads/2024/11/OF-5001Pro-50.jpg" alt="Jacuzzi premium terrasse" loading="lazy"/>
+        <div class="about-img-badge"><div class="about-badge-num">100%</div><div class="about-badge-lbl">Satisfaction</div></div>
+      </div>
+      <div>
+        <div class="sec-tag">Notre Mission</div>
+        <h2 class="sec-h2">L'excellence<br/><em>du bien-être</em><br/>à domicile</h2>
+        <div class="gold-line"></div>
+        <p class="sec-desc" style="margin-top:18px;max-width:100%">Valentin &amp; Gauthier Wellness est né d'une passion commune pour le bien-être et d'une conviction : chacun mérite un espace de détente exceptionnel chez soi. Nous sélectionnons avec exigence des équipements premium — testés, certifiés, durables — et nous accompagnons chaque client de la première prise de contact jusqu'à l'installation finale.</p>
+        <p class="sec-desc" style="margin-top:14px;max-width:100%">Notre zone d'intervention couvre la France, la Belgique, la Suisse et le Luxembourg. Pour d'autres destinations, contactez-nous : nous étudions chaque projet.</p>
+        <div class="cert-list">
+          <span class="cert-badge">CE Certifié</span>
+          <span class="cert-badge">CB Certifié</span>
+          <span class="cert-badge">ETL Listed</span>
+          <span class="cert-badge">SAA Certifié</span>
+          <span class="cert-badge">Garantie Fabricant</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stats-wrap">
+    <div class="stats-inner">
+      <div class="stat-block"><div class="stat-num">200+</div><div class="stat-lbl">Modèles disponibles</div></div>
+      <div class="stat-block"><div class="stat-num">4</div><div class="stat-lbl">Pays couverts</div></div>
+      <div class="stat-block"><div class="stat-num">100%</div><div class="stat-lbl">Satisfaction client</div></div>
+      <div class="stat-block"><div class="stat-num">24h</div><div class="stat-lbl">Délai de réponse</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE : CONTACT
+══════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-banner"><img src="https://www.oceanfuturespas.com/wp-content/uploads/2024/11/contact-1.jpg" alt="Contact Valentin Gauthier Wellness" loading="lazy"/><div class="page-banner-overlay"></div><div class="page-banner-content"><div class="page-banner-tag">Nous Contacter</div><h1>Devis &amp; Renseignements</h1><p>Réponse garantie sous 24h</p></div></div>
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span>Contact</div>
+  <div class="sec">
+    <div class="contact-grid">
+      <div>
+        <div class="sec-tag">Coordonnées</div>
+        <h2 class="contact-info-title">Parlons de<br/><em>votre projet</em></h2>
+        <div class="gold-line" style="margin-bottom:28px"></div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+          <p><strong>Téléphone / WhatsApp</strong><a href="tel:+33782614867">+33 7 82 61 48 67</a></p>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          <p><strong>Email</strong><a href="mailto:valentin.gauthier.groupe@gmail.com">valentin.gauthier.groupe@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+          <p><strong>Horaires</strong>Lun–Sam : 9h–19h · Réponse sous 24h</p>
+        </div>
+        <div class="contact-zone">
+          <h4>🌍 Zone d'Intervention</h4>
+          <p>France · Belgique · Suisse · Luxembourg<br/><span style="font-size:.76rem;opacity:.7;margin-top:6px;display:block">Autre pays ? Contactez-nous quand même, nous étudions chaque projet !</span></p>
+        </div>
+      </div>
+      <div>
+        <div class="sec-tag">Formulaire</div>
+        <h2 class="contact-form-title">Votre <em>demande</em><br/>de devis</h2>
+        <div class="gold-line" style="margin-bottom:28px"></div>
+        <form onsubmit="return false">
+          <div class="form-row">
+            <div class="form-group"><label>Nom *</label><input type="text" placeholder="Votre nom"/></div>
+            <div class="form-group"><label>Email *</label><input type="email" placeholder="votre@email.com"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Téléphone</label><input type="tel" placeholder="+33 ..."/></div>
+            <div class="form-group"><label>Pays</label><input type="text" placeholder="France"/></div>
+          </div>
+          <div class="form-group">
+            <label>Produit souhaité</label>
+            <select>
+              <option value="">— Choisir une catégorie —</option>
+              <option>Jacuzzi / Hot Tub</option>
+              <option>Piscine à Nage</option>
+              <option>Sauna</option>
+              <option>Bain Froid</option>
+              <option>Pack Sauna + Bain Froid</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message *</label><textarea placeholder="Décrivez votre projet, vos besoins, l'espace disponible..."></textarea></div>
+          <button type="submit" class="btn-gold" style="width:100%;justify-content:center;padding:16px">Envoyer ma demande →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-name" style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;margin-bottom:4px">Valentin &amp; Gauthier</div>
+      <div class="footer-logo-sub">Wellness · Bien-être Haut de Gamme</div>
+      <p class="footer-desc">Expert en jacuzzis, piscines à nage contre-courant, saunas et bains froids premium. Livraison et installation en France, Belgique, Suisse et Luxembourg.</p>
+      <div class="footer-contact-row"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg><a href="tel:+33782614867">+33 7 82 61 48 67</a></div>
+      <div class="footer-contact-row"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:valentin.gauthier.groupe@gmail.com">valentin.gauthier.groupe@gmail.com</a></div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a onclick="goPage('home')">Accueil</a></li>
+        <li><a onclick="goPage('about')">À Propos</a></li>
+        <li><a onclick="goPage('contact')">Contact &amp; Devis</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Produits</h4>
+      <ul>
+        <li><a onclick="goPage('hottub')">Jacuzzi / Hot Tub</a></li>
+        <li><a onclick="goPage('swimspa')">Piscines à Nage</a></li>
+        <li><a onclick="goPage('sauna')">Saunas</a></li>
+        <li><a onclick="goPage('cold')">Bain Froid</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Zone</h4>
+      <ul>
+        <li><a>🇫🇷 France</a></li>
+        <li><a>🇧🇪 Belgique</a></li>
+        <li><a>🇨🇭 Suisse</a></li>
+        <li><a>🇱🇺 Luxembourg</a></li>
+        <li><a onclick="goPage('contact')" style="color:rgba(201,169,110,.5);font-size:.74rem">Autre pays → nous contacter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Valentin &amp; Gauthier Wellness — Tous droits réservés</p>
+    <p>Jacuzzi · Piscine à Nage · Sauna · Bain Froid · France · Belgique · Suisse</p>
+  </div>
+</footer>
+
+<!-- Floating devis -->
+<div class="float-cta">
+  <button onclick="goPage('contact')">DEVIS GRATUIT</button>
+</div>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT — Data + Rendering
+══════════════════════════════════════════ -->
+<script>
+// Navigation - défini en premier pour être disponible immédiatement
+function changeColor(pid, imgSrc, btn) {
+  var img = document.getElementById('pdp-colorimg-' + pid);
+  if(img) {
+    img.style.opacity = '0';
+    setTimeout(function() { img.src = imgSrc; img.style.opacity = '1'; }, 180);
+  }
+  var tab = document.getElementById('tc-' + pid);
+  if(tab) tab.querySelectorAll('.of-swatch').forEach(function(s) { s.classList.remove('active'); });
+  if(btn) btn.classList.add('active');
+}
+
+function goPage(id) {
+  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+  var el = document.getElementById('page-' + id);
+  if(el) { el.classList.add('active'); window.scrollTo(0, 0); }
+}
+function tfaq(el) {
+  el.classList.toggle('open');
+  var a = el.nextElementSibling;
+  if(a) a.classList.toggle('show');
+}
+function toggleMobileNav() {
+  var links = document.querySelector('.nav-links');
+  if(!links) return;
+  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  if(links.style.display === 'flex') {
+    links.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,14,20,.98);z-index:9999;justify-content:center;align-items:center;gap:20px;height:100vh';
+  }
+}
+</script>
+<script>
+const OF = 'https://www.oceanfuturespas.com/wp-content/uploads';
+const EUR = 0.92, M = 1/(1-0.35);
+const pr = usd => Math.ceil(usd*EUR*M/10)*10;
+const fm = n => n.toLocaleString('fr-FR');
+
+// ── COULEURS ──
+const CAB_COLORS = [
+  {key:'white', hex:'#eeeeee', name:'Blanc'},
+  {key:'grey',  hex:'#8a9aaa', name:'Gris nuageux'},
+  {key:'black', hex:'#222222', name:'Noir nuageux'},
+  {key:'blue',  hex:'#3a6090', name:'Bleu nuageux'},
+];
+const SKIRT_COLORS = [
+  {hex:'#7a7068', name:'Gris mat'},
+  {hex:'#363636', name:'Gris foncé'},
+  {hex:'#141414', name:'Noir argent'},
+  {hex:'#c0965c', name:'Brun clair'},
+];
+const FEAT_IMGS = [
+  [`${OF}/2024/11/Acrylic-Sheets-1-1-300x300-1.jpg`, 'Acrylique Premium', "Plaques acryliques haute résistance aux UV et intempéries. Couleurs intenses et durables dans le temps."],
+  [`${OF}/2024/11/2.png`, 'Éclairage LED', "Lumières multicolores pour créer l'ambiance parfaite. Économique et longue durée de vie."],
+  [`${OF}/2024/11/3-1.png`, 'Jets Thérapeutiques', "Jets rotatifs ciblant dos, épaules et lombaires pour une détente musculaire profonde."],
+  [`${OF}/2024/11/4.png`, 'Filtration Avancée', "Système ozone + filtre cartouche pour une eau cristalline sans effort."],
+];
+
+// ── DONNÉES JACUZZIS ──
+const JACUZZIS = [
+  {id:'p2001',cat:'luxury',nom:'OF-2001 Pro',places:'2',jets:'36',dims:'2000×1350×800mm',poids:'250kg',pw:'4.2kW',usd:1554,
+   imgs:[`${OF}/2024/11/OF-2001Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-2001Pro-86.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-2001Pro-86.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi 2 personnes compact et élégant, idéal pour balcon ou petite terrasse. Système de contrôle KL2022, chauffage 3kW, ozone, éclairage LED multicolore, Bluetooth.",
+   specs:[['Dimensions','2000×1350×800mm'],['Personnes','2'],['Jets','36 pcs (rotatifs, directs, bulles)'],['Contrôle','KL2022 + Bluetooth'],['Pompe eau','1100W×2'],['Pompe filtre','250W'],['Pompe air','400W'],['Chauffage','3000W'],['Ozone','1 set'],['LED','2 spots 5"'],['Haut-parleurs','2 pcs'],['Puissance totale','4200W'],['Poids','250kg'],['Certification','CE · CB · ETL']]},
+  {id:'p2002',cat:'luxury patio',nom:'OF-2002 Pro',places:'2',jets:'36',dims:'1760×1180×750mm',poids:'220kg',pw:'4kW',usd:1554,
+   imgs:[`${OF}/2024/11/OF-2002Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-2002Pro-11-1.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-2002Pro-11-1.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi 2 personnes ultra-compact au format slim. Parfait pour les petits espaces. Contrôle tactile intuitif, jets thérapeutiques, éclairage LED.",
+   specs:[['Dimensions','1760×1180×750mm'],['Personnes','2'],['Jets','36 pcs'],['Contrôle','KL2022 + Bluetooth'],['Chauffage','3000W'],['Ozone','1 set'],['Puissance totale','4000W'],['Poids','220kg'],['Certification','CE · CB · ETL']]},
+  {id:'p3001',cat:'luxury patio',nom:'OF-3001 Pro',places:'3',jets:'46',dims:'1870×1330×800mm',poids:'280kg',pw:'5kW',usd:1785,
+   imgs:[`${OF}/2024/11/OF-3001Pro.jpg`,`${OF}/2024/11/OF-3001Pro-22.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-3001Pro-22.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi 3 personnes en acrylique premium. Design épuré avec 46 jets rotatifs pour un massage complet du corps. Idéal pour terrasse ou jardin.",
+   specs:[['Dimensions','1870×1330×800mm'],['Personnes','3'],['Jets','46 pcs'],['Contrôle','KL2022 + Bluetooth'],['Pompe eau','1100W×2'],['Chauffage','3000W'],['LED','5" spot + mini-LED'],['Haut-parleurs','2 pcs'],['Puissance totale','5000W'],['Poids','280kg'],['Certification','CE · CB · ETL']]},
+  {id:'p3002',cat:'luxury',nom:'OF-3002 Pro',places:'3',jets:'48',dims:'1870×1330×800mm',poids:'285kg',pw:'5kW',usd:1785,
+   imgs:[`${OF}/2024/11/OF-3002Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-3002Pro-34.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-3002Pro-34.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi 3 personnes configuration avancée. 48 jets ciblés dos/épaules/pieds, acrylique supérieure, habillage PS premium résistant aux intempéries.",
+   specs:[['Dimensions','1870×1330×800mm'],['Personnes','3'],['Jets','48 pcs'],['Contrôle','KL2022 + Bluetooth'],['Chauffage','3000W'],['Puissance totale','5000W'],['Poids','285kg'],['Certification','CE · CB · ETL']]},
+  {id:'p4001',cat:'luxury',nom:'OF-4001 Pro',places:'5',jets:'58',dims:'2160×1760×800mm',poids:'310kg',pw:'6kW',usd:1815,
+   imgs:[`${OF}/2024/11/OF-4001Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-4001Pro-37.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-4001Pro-37.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`},
+   desc:"Grand jacuzzi 5 personnes spacieux. 58 jets lombaires, cervicaux et plantaires. Système audio Bluetooth, parfait pour la détente en famille.",
+   specs:[['Dimensions','2160×1760×800mm'],['Personnes','5'],['Jets','58 pcs'],['Contrôle','KL2022 + Bluetooth'],['Pompe eau','1500W×2'],['Pompe air','900W'],['Chauffage','3000W'],['LED','5" + mini-LED'],['Haut-parleurs','4 pcs'],['Puissance totale','6000W'],['Poids','310kg'],['Certification','CE · CB · ETL']]},
+  {id:'p4002',cat:'luxury',nom:'OF-4002 Pro',places:'5',jets:'62',dims:'2160×2160×900mm',poids:'320kg',pw:'6.5kW',usd:1815,
+   imgs:[`${OF}/2024/11/OF-4002Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-4002Pro-49.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-4002Pro-49.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`},
+   desc:"Jacuzzi 5 personnes carré XXL. Configuration symétrique avec 62 jets, cascade waterfall décorative, éclairage LED fond de bassin.",
+   specs:[['Dimensions','2160×2160×900mm'],['Personnes','5'],['Jets','62 pcs'],['Contrôle','KL2022 + Bluetooth'],['Chauffage','3000W'],['Cascade','1 pc'],['Puissance totale','6500W'],['Poids','320kg'],['Certification','CE · CB · ETL']]},
+  {id:'p5001',cat:'luxury',nom:'OF-5001 Pro',places:'5',jets:'68',dims:'2160×2160×900mm',poids:'340kg',pw:'7.27kW',usd:1815,
+   imgs:[`${OF}/2024/11/OF-5001Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-5001Pro-50.jpg`,`${OF}/2024/11/of-4002pro-2.jpg`,`${OF}/2024/11/of-4002pro-3.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-5001Pro-50.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Le OF-5001 Pro — notre flagship 5 personnes. 68 jets avec LED, colonnes pop-up, 4 haut-parleurs Bluetooth, système intelligent. Matériaux ultra-résistants.",
+   specs:[['Dimensions','2160×2160×900mm'],['Personnes','5'],['Jets','68 pcs (3.5" LED×4, 2.5" LED×4, 1"×34, bulles LED×26)'],['Contrôle','KL2022 + Bluetooth'],['Pompe eau','1500W×2'],['Pompe filtre','370W'],['Pompe air','900W'],['Chauffage','3000W'],['Colonnes pop-up','3 pcs 3.5"'],['LED','5"×1 + mini×10'],['Haut-parleurs','4 pcs'],['Oreiller','3 pcs'],['Puissance totale','7270W'],['Poids','340kg'],['Certification','CE · CB · ETL']]},
+  {id:'p5002',cat:'luxury',nom:'OF-5002 Pro',places:'5',jets:'70',dims:'2160×2160×900mm',poids:'340kg',pw:'7kW',usd:1815,
+   imgs:[`${OF}/2024/11/OF-5002Pro.jpg`,`${OF}/2024/11/OF-5002Pro-42.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-5002Pro-42.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi 5 personnes design contemporain. 70 jets, cascade décorative, éclairage ambiance, habillage modulable. Lignes épurées pour tout environnement.",
+   specs:[['Dimensions','2160×2160×900mm'],['Personnes','5'],['Jets','70 pcs'],['Contrôle','KL2022 + Bluetooth'],['Chauffage','3000W'],['Cascade','1 pc'],['Puissance totale','7000W'],['Poids','340kg'],['Certification','CE · CB · ETL']]},
+  {id:'p5003',cat:'luxury',nom:'OF-5003 Pro',places:'5',jets:'68',dims:'2150×2150×900mm',poids:'335kg',pw:'7kW',usd:1969,
+   imgs:[`${OF}/2025/03/OF-5003Pro-9.jpg`,`${OF}/2025/03/OF-5003Pro-60.jpg`],
+   scenes:{white:`${OF}/2025/03/OF-5003Pro-60.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Notre modèle le plus personnalisable. Design exclusif, 68 jets haute performance, finitions sur mesure. Le summum du confort pour 5 personnes exigeantes.",
+   specs:[['Dimensions','2150×2150×900mm'],['Personnes','5'],['Jets','68 pcs'],['Contrôle','KL2022 + Bluetooth'],['Personnalisation','Sur mesure'],['Chauffage','3000W'],['Puissance totale','7000W'],['Poids','335kg'],['Certification','CE · CB · ETL']]},
+  {id:'p6001',cat:'luxury',nom:'OF-6001 Pro',places:'6',jets:'80',dims:'2160×2160×900mm',poids:'380kg',pw:'8kW',usd:1969,
+   imgs:[`${OF}/2024/11/OF-6001Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/OF-6001Pro-52.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-6001Pro-52.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Flagship 6 personnes — l'expérience spa ultime. 80 jets multidirectionnels, filtration avancée, audio haute fidélité, éclairage spectaculaire.",
+   specs:[['Dimensions','2160×2160×900mm'],['Personnes','6'],['Jets','80 pcs'],['Contrôle','KL2022 + Bluetooth'],['Pompe eau','1500W×3'],['Chauffage','3000W'],['LED','5"×2 + mini×15'],['Haut-parleurs','4 pcs'],['Puissance totale','8000W'],['Poids','380kg'],['Certification','CE · CB · ETL']]},
+  {id:'p6002',cat:'luxury',nom:'OF-6002 Pro',places:'6',jets:'78',dims:'2160×2160×900mm',poids:'375kg',pw:'8kW',usd:1969,
+   imgs:[`${OF}/2024/11/OF-6002Pro%E4%BF%AF%E8%A7%86%E5%9B%BE.jpg`,`${OF}/2024/11/1-4.jpg`],
+   scenes:{white:`${OF}/2024/11/1-4.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2025/04/OF-2002Pro-%E5%9C%BA%E6%99%AF.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi 6 personnes prestige. Configuration lounge avec sièges profonds, 78 jets massants, ambiance lumineuse entièrement personnalisable.",
+   specs:[['Dimensions','2160×2160×900mm'],['Personnes','6'],['Jets','78 pcs'],['Chauffage','3000W'],['Puissance totale','8000W'],['Poids','375kg'],['Certification','CE · CB · ETL']]},
+  {id:'pr001',cat:'round',nom:'OF-R001',places:'4–6',jets:'55',dims:'Ø2100×850mm',poids:'290kg',pw:'5kW',usd:2523,
+   imgs:[`${OF}/2025/04/OF-R001-scaled.jpg`,`${OF}/2025/04/OF-R001-scaled.jpg`],
+   scenes:{white:`${OF}/2025/04/OF-R001-scaled.jpg`,grey:`${OF}/2025/03/OF-5003Pro-9.jpg`,black:`${OF}/2024/11/OF-5001Pro-50.jpg`,blue:`${OF}/2024/11/OF-4001Pro-37.jpg`},
+   desc:"Jacuzzi rond unique en son genre. Design circulaire convivial pour 4–6 personnes. 55 jets, assise tout autour — parfait pour partager de beaux moments.",
+   specs:[['Forme','Ronde (Ø2100mm)'],['Personnes','4–6'],['Jets','55 pcs'],['Chauffage','3000W'],['Puissance totale','5000W'],['Poids','290kg'],['Certification','CE · CB · ETL']]},
+];
+
+// ── DONNÉES PISCINES ──
+const POOLS = [
+  {id:'ss120c',cat:'endless',nom:'OF-120AT — Endless 12m',longueur:'12m',places:'2',dims:'11830×3000×1450mm',usd:14778,
+   imgs:[`${OF}/2024/11/OF-120AT-1.jpg`,`${OF}/2024/11/OF-120AT-1.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-120AT-1.jpg`,grey:`${OF}/2025/12/OF-1202U-4.jpg`,black:`${OF}/2025/12/OF-1001U-3.jpg`,blue:`${OF}/2025/12/OF-1002T.jpg`},
+   desc:"Piscine à nage 12m haut de gamme. Contre-courant puissant pour entraînement intensif, espace spa chauffé séparé, éclairage LED immersif. La référence pour les nageurs exigeants.",
+   specs:[['Longueur','11830mm'],['Largeur','3000mm'],['Profondeur','1450mm'],['Contre-courant','Réglable'],['Zone spa','Intégrée'],['Chauffage','3000W×2'],['Filtration','Multicouches'],['Certification','CE · CB · ETL']]},
+  {id:'ss1202u',cat:'endless',nom:'OF-1202U — Endless 12m Pro',longueur:'12m',places:'2',dims:'11830×3000×1450mm',usd:14778,
+   imgs:[`${OF}/2025/12/OF-1202U-4.jpg`,`${OF}/2025/12/OF-1202U-4.jpg`],
+   scenes:{white:`${OF}/2025/12/OF-1202U-4.jpg`,grey:`${OF}/2024/11/OF-120AT-1.jpg`,black:`${OF}/2025/12/OF-1001U-3.jpg`,blue:`${OF}/2025/12/OF-1002T.jpg`},
+   desc:"Piscine à nage 12m nouvelle génération. Technologie contre-courant dernier cri, espace spa panoramique, éclairage ambiance LED. Design ultra-contemporain.",
+   specs:[['Longueur','11830mm'],['Largeur','3000mm'],['Profondeur','1450mm'],['Contre-courant','Haute performance'],['Chauffage','3000W×2'],['Certification','CE · CB · ETL']]},
+  {id:'ss1001u',cat:'fitness endless',nom:'OF-1001U — Fitness 10m',longueur:'10m',places:'2',dims:'10000×2200×1450mm',usd:13231,
+   imgs:[`${OF}/2025/12/OF-1001U-3.jpg`,`${OF}/2025/12/OF-1001U-3.jpg`],
+   scenes:{white:`${OF}/2025/12/OF-1001U-3.jpg`,grey:`${OF}/2025/12/OF-1202U-4.jpg`,black:`${OF}/2024/11/OF-120AT-1.jpg`,blue:`${OF}/2025/12/OF-1002T.jpg`},
+   desc:"Piscine fitness 10m ultra-moderne. Double zone nage + spa, système filtration avancé, revêtement premium, design contemporain.",
+   specs:[['Longueur','10000mm'],['Largeur','2200mm'],['Profondeur','1450mm'],['Contre-courant','Réglable'],['Certification','CE · CB · ETL']]},
+  {id:'ss1002t',cat:'fitness',nom:'OF-1002T — Fitness 10m Grand',longueur:'10m',places:'1',dims:'9950×3000×1430mm',usd:13231,
+   imgs:[`${OF}/2025/12/OF-1002T.jpg`,`${OF}/2025/12/OF-1002T.jpg`],
+   scenes:{white:`${OF}/2025/12/OF-1002T.jpg`,grey:`${OF}/2025/12/OF-1001U-3.jpg`,black:`${OF}/2025/12/OF-1202U-4.jpg`,blue:`${OF}/2024/11/OF-120AT-1.jpg`},
+   desc:"Piscine fitness 10m grand format. Largeur 3m pour nage très confortable, contre-courant haute performance, finitions premium.",
+   specs:[['Longueur','9950mm'],['Largeur','3000mm'],['Profondeur','1430mm'],['Certification','CE · CB · ETL']]},
+  {id:'ss401t',cat:'fitness compact',nom:'OF-401T — Fitness 4m',longueur:'4m',places:'3',dims:'3880×2200×1250mm',usd:5724,
+   imgs:[`${OF}/2024/11/OF-401T.jpg`,`${OF}/2024/11/OF-401T.jpg`],
+   scenes:{white:`${OF}/2024/11/OF-401T.jpg`,grey:`${OF}/2025/12/OF-1001U-3.jpg`,black:`${OF}/2025/12/OF-1002T.jpg`,blue:`${OF}/2025/12/OF-1202U-4.jpg`},
+   desc:"Piscine fitness compacte 4m. Contre-courant pour nage sur place, 46 jets massage, format idéal pour terrasse ou jardin de taille moyenne.",
+   specs:[['Longueur','3880mm'],['Largeur','2200mm'],['Profondeur','1250mm'],['Personnes (spa)','3'],['Jets','46 pcs'],['Certification','CE · CB · ETL']]},
+  {id:'ssS10',cat:'compact',nom:'WS-S10 — Piscine 10m',longueur:'10m',places:'7',dims:'10000×2200×1450mm',usd:13231,
+   imgs:[`https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1001U-3.jpg`,`https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1202U-4.jpg`],
+   scenes:{white:`${OF}/2025/12/OF-1202U-4.jpg`,grey:`${OF}/2025/12/OF-1001U-3.jpg`,black:`${OF}/2024/11/OF-120AT-1.jpg`,blue:`${OF}/2025/12/OF-1202U-4.jpg`},
+   desc:"Piscine 10m spacieuse avec espace spa 7 places. Contre-courant réglable + 116 jets thérapeutiques. La solution complète nage & détente.",
+   specs:[['Longueur','10000mm'],['Places spa','7'],['Jets','116 pcs'],['Contre-courant','Réglable'],['Certification','CE · CB · ETL']]},
+  {id:'ssS06',cat:'compact',nom:'WS-S06 — Piscine 6m',longueur:'6m',places:'6',dims:'5850×2220×1110mm',usd:6035,
+   imgs:[`https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1202U-4.jpg`,`https://www.oceanfuturespas.com/wp-content/uploads/2025/12/OF-1001U-3.jpg`],
+   scenes:{white:`${OF}/2025/12/OF-1001U-3.jpg`,grey:`${OF}/2025/12/OF-1202U-4.jpg`,black:`${OF}/2024/11/OF-120AT-1.jpg`,blue:`${OF}/2025/12/OF-1202U-4.jpg`},
+   desc:"Piscine 6m compacte et complète. 6 places dans l'espace spa, 79 jets, contre-courant efficace. Le meilleur rapport qualité/prix de la gamme.",
+   specs:[['Longueur','5850mm'],['Places spa','6'],['Jets','79 pcs'],['Contre-courant','Intégré'],['Certification','CE · CB · ETL']]},
+];
+
+// ── DONNÉES SAUNAS ──
+const SAUNAS = [
+  {id:'saYL1',cat:'infrared',nom:'Sauna Infrarouge YL — 1–2 pers.',places:'1–2',dims:'1100×1000×2100mm',usd:1422,
+   imgs:[`${OF}/2024/12/infrared-sauna-rooms-1.jpg`,`${OF}/2024/12/Sauna-2.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-2.jpg`,grey:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`,black:`${OF}/2024/12/Sauna-room.jpg`,blue:`${OF}/2024/12/traditional-sauna-rooms.jpg`},
+   desc:"Sauna infrarouge compact 1–2 personnes. Panneaux infrarouges lointains, bois de cèdre, contrôle digital, chromothérapie LED.",
+   specs:[['Personnes','1–2'],['Dimensions','1100×1000×2100mm'],['Type','Infrarouge'],['Matériau','Cèdre canadien'],['Contrôle','Digital'],['Certification','CE · CB']]},
+  {id:'saYL2',cat:'infrared',nom:'Sauna Infrarouge YL — 2–3 pers.',places:'2–3',dims:'1200×1000×2100mm',usd:1554,
+   imgs:[`${OF}/2024/12/infrared-sauna-rooms-1.jpg`,`${OF}/2024/12/Sauna-2.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-2.jpg`,grey:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`,black:`${OF}/2024/12/Sauna-room.jpg`,blue:`${OF}/2024/12/traditional-sauna-rooms.jpg`},
+   desc:"Sauna infrarouge 2–3 personnes. Idéal pour couple, porte en verre trempé, chromothérapie LED intégrée, bois canadien premium.",
+   specs:[['Personnes','2–3'],['Dimensions','1200×1000×2100mm'],['Type','Infrarouge'],['Matériau','Cèdre canadien'],['Certification','CE · CB']]},
+  {id:'saYL3',cat:'infrared',nom:'Sauna Infrarouge YL — 3–4 pers.',places:'3–4',dims:'1500×1200×2100mm',usd:1785,
+   imgs:[`${OF}/2024/12/infrared-sauna-rooms-1.jpg`,`${OF}/2024/12/Sauna-2.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-2.jpg`,grey:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`,black:`${OF}/2024/12/Sauna-room.jpg`,blue:`${OF}/2024/12/traditional-sauna-rooms.jpg`},
+   desc:"Sauna infrarouge familial 3–4 personnes. Grand espace, bancs spacieux, Bluetooth, chromothérapie. La détente complète.",
+   specs:[['Personnes','3–4'],['Dimensions','1500×1200×2100mm'],['Type','Infrarouge'],['Audio','Bluetooth'],['Certification','CE · CB']]},
+  {id:'saCC1',cat:'traditional',nom:'Sauna Traditionnel CC — 2–4 pers.',places:'2–4',dims:'1800×1200×1900mm',usd:1785,
+   imgs:[`${OF}/2024/12/traditional-sauna-rooms.jpg`,`${OF}/2024/12/Sauna-room.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-room.jpg`,grey:`${OF}/2024/12/traditional-sauna-rooms.jpg`,black:`${OF}/2024/12/Sauna-2.jpg`,blue:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`},
+   desc:"Sauna traditionnel finlandais design contemporain. Poêle électrique puissant, pierres volcaniques, vapeur authentique, bois thermotraité.",
+   specs:[['Personnes','2–4'],['Dimensions','1800×1200×1900mm'],['Type','Traditionnel vapeur'],['Matériau','Bois thermotraité'],['Certification','CE · CB']]},
+  {id:'saCC2',cat:'traditional',nom:'Sauna Traditionnel CC — 4–6 pers.',places:'4–6',dims:'1800×1500×1900mm',usd:2047,
+   imgs:[`${OF}/2024/12/traditional-sauna-rooms.jpg`,`${OF}/2024/12/Sauna-room.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-room.jpg`,grey:`${OF}/2024/12/traditional-sauna-rooms.jpg`,black:`${OF}/2024/12/Sauna-2.jpg`,blue:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`},
+   desc:"Grand sauna traditionnel 4–6 personnes. Architecture finlandaise classique, poêle haute puissance, isolation premium.",
+   specs:[['Personnes','4–6'],['Dimensions','1800×1500×1900mm'],['Type','Traditionnel vapeur'],['Certification','CE · CB']]},
+  {id:'sa1901',cat:'steam',nom:'Sauna Vapeur WS-21901',places:'2–3',dims:'2000×1200×2100mm',usd:1939,
+   imgs:[`${OF}/2024/12/traditional-sauna-rooms.jpg`,`${OF}/2024/12/Sauna-2.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-2.jpg`,grey:`${OF}/2024/12/traditional-sauna-rooms.jpg`,black:`${OF}/2024/12/Sauna-room.jpg`,blue:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`},
+   desc:"Sauna vapeur bois Sapele. Générateur 3kW, douche intégrée, lumière colorée, enceinte audio. Bois naturel noble.",
+   specs:[['Personnes','2–3'],['Dimensions','2000×1200×2100mm'],['Type','Vapeur'],['Matériau','Bois Sapele'],['Générateur','3kW'],['Certification','CE · CB']]},
+  {id:'sa1902',cat:'steam',nom:'Sauna Vapeur WS-21902 — Grand',places:'3–4',dims:'2200×1200×2100mm',usd:2508,
+   imgs:[`${OF}/2024/12/traditional-sauna-rooms.jpg`,`${OF}/2024/12/Sauna-room.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-room.jpg`,grey:`${OF}/2024/12/traditional-sauna-rooms.jpg`,black:`${OF}/2024/12/Sauna-2.jpg`,blue:`${OF}/2024/12/infrared-sauna-rooms-1.jpg`},
+   desc:"Grand sauna vapeur bois Sapele. Générateur puissant, robinet mitigeur thermostatique, finitions nobles. L'expérience hammam chez soi.",
+   specs:[['Personnes','3–4'],['Dimensions','2200×1200×2100mm'],['Type','Vapeur'],['Matériau','Bois Sapele'],['Certification','CE · CB']]},
+];
+
+// ── DONNÉES BAIN FROID ──
+const COLD = [
+  {id:'cp1',nom:'Cold Plunge Individuel',places:'1',dims:'1500×700×700mm',usd:1554,
+   imgs:[`${OF}/2024/11/cold-plunge-1.jpg`,`${OF}/2024/11/home-cold-plunge.jpg`],
+   scenes:{white:`${OF}/2024/11/home-cold-plunge.jpg`,grey:`${OF}/2024/12/cold.jpg`,black:`${OF}/2024/11/cold-plunge-1.jpg`,blue:`${OF}/2024/11/home-cold-plunge.jpg`},
+   desc:"Bain froid individuel acier inoxydable. Refroidissement jusqu'à 4°C, filtration UV, isolation double paroi. Récupération sportive et cryothérapie quotidienne.",
+   specs:[['Personnes','1'],['Dimensions','1500×700×700mm'],['Température','4–15°C'],['Filtration','UV + ozone'],['Matériau','Acier inox']]},
+  {id:'cp2',nom:'Cold Plunge Pro — Réfrigéré',places:'1–2',dims:'1800×800×750mm',usd:1815,
+   imgs:[`${OF}/2024/11/home-cold-plunge.jpg`,`${OF}/2024/12/cold.jpg`],
+   scenes:{white:`${OF}/2024/12/cold.jpg`,grey:`${OF}/2024/11/home-cold-plunge.jpg`,black:`${OF}/2024/11/cold-plunge-1.jpg`,blue:`${OF}/2024/12/cold.jpg`},
+   desc:"Bain froid professionnel avec réfrigération intégrée. Température précise 4–15°C, filtration continue, affichage digital.",
+   specs:[['Personnes','1–2'],['Dimensions','1800×800×750mm'],['Température','4–15°C précis'],['Affichage','Digital']]},
+  {id:'cp3',nom:'Cold Plunge XL — 2 personnes',places:'2',dims:'2000×900×750mm',usd:2047,
+   imgs:[`${OF}/2024/12/cold.jpg`,`${OF}/2024/11/home-cold-plunge.jpg`],
+   scenes:{white:`${OF}/2024/11/home-cold-plunge.jpg`,grey:`${OF}/2024/12/cold.jpg`,black:`${OF}/2024/11/cold-plunge-1.jpg`,blue:`${OF}/2024/11/home-cold-plunge.jpg`},
+   desc:"Grand bain froid 2 personnes. Idéal en duo ou grands gabarits. Réfrigération puissante, filtration avancée, vidange rapide.",
+   specs:[['Personnes','2'],['Dimensions','2000×900×750mm'],['Température','4–15°C'],['Vidange','Rapide']]},
+  {id:'cppack',nom:'Pack Sauna + Bain Froid',places:'—',dims:'Sur mesure',usd:2298+1554,
+   imgs:[`${OF}/2024/12/cold.jpg`,`${OF}/2024/12/Sauna-2.jpg`],
+   scenes:{white:`${OF}/2024/12/Sauna-2.jpg`,grey:`${OF}/2024/12/cold.jpg`,black:`${OF}/2024/11/cold-plunge-1.jpg`,blue:`${OF}/2024/11/home-cold-plunge.jpg`},
+   desc:"Le combo bien-être ultime : sauna + bain froid. Alternance chaud/froid pour une récupération optimale, boost immunitaire, brûlage des graisses.",
+   specs:[['Contenu','1 sauna + 1 bain froid'],['Économie','Pack -10%'],['Installation','Clé en main']]},
+];
+
+// ══════════════════════════════════════════
+// FONCTIONS DE RENDU
+// ══════════════════════════════════════════
+
+function makeCard(p, pagePrefix='p') {
+  const eur = pr(p.usd);
+  return `
+  <div class="prod-card" onclick="goPage('${p.id}')">
+    <div class="pc-img-wrap">
+      <img class="main-img" src="${p.imgs[0]}" alt="${p.nom} prix avis" loading="lazy"/>
+      ${p.imgs[1] ? `<img class="hover-img" src="${p.imgs[1]}" alt="${p.nom} en situation" loading="lazy"/>` : ''}
+    </div>
+    <div class="pc-body">
+      <div class="pc-name">${p.nom}</div>
+      <div class="pc-price">${fm(eur)} €</div>
+      <div class="pc-params">
+        <div class="pc-param"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>${p.places} pers.</div>
+        <div class="pc-param"><svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/></svg>${p.dims ? p.dims.split('×').slice(0,2).join('×') : p.longueur||''}</div>
+      </div>
+      <div class="pc-footer">
+        <span class="pc-link">Voir la fiche →</span>
+        <button class="pc-btn-devis" onclick="event.stopPropagation();goPage('contact')">
+          <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function makePDP(p, parentPage, parentLabel, cat) {
+  const eur = pr(p.usd);
+  const firstScene = p.scenes ? p.scenes.white || p.imgs[0] : p.imgs[0];
+  const thumbs = p.imgs.map((img,i) =>
+    `<div class="pdp-thumb ${i===0?'active':''}" onclick="pdpImg('${p.id}','${img}')" data-img="${img}"><img src="${img}" loading="lazy"/></div>`
+  ).join('');
+  
+  const cabBtns = CAB_COLORS.map((c,i) =>
+    `<div class="pdp-color-btn ${i===0?'active':''}" onclick="pdpColor('${p.id}','${p.scenes[c.key]||p.imgs[0]}','${p.imgs[0]}',this)">
+      <div class="pdp-color-dot" style="background:${c.hex}"></div>
+      <div class="pdp-color-name">${c.name}</div>
+    </div>`
+  ).join('');
+  
+  const skirtBtns = SKIRT_COLORS.map(c =>
+    `<div class="pdp-color-btn"><div class="pdp-color-dot" style="background:${c.hex}"></div><div class="pdp-color-name">${c.name}</div></div>`
+  ).join('');
+  
+  const specs = (p.specs||[]).map(([k,v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+  
+  const feats = FEAT_IMGS.map(([img,title,desc]) =>
+    `<div class="pdp-feat"><img src="${img}" alt="${title}" loading="lazy"/><div class="pdp-feat-body"><div class="pdp-feat-title">${title}</div><div class="pdp-feat-desc">${desc}</div></div></div>`
+  ).join('');
+  
+  // Couleurs Cabinet — clic change l image produit comme sur Ocean Future
+  const cabColorBtns = CAB_COLORS.map(function(c,i) {
+    const cImg = (p.scenes && p.scenes[c.key]) ? p.scenes[c.key] : p.imgs[0];
+    return '<div class="of-swatch' + (i===0?' active':'') + '" onclick="changeColor(\'' + p.id + '\',\'' + cImg + '\',this)">'
+      + '<div class="of-dot" style="background:' + c.hex + '"></div>'
+      + '<span class="of-lbl">' + c.name + '</span></div>';
+  }).join('');
+  const skirtColorBtns = SKIRT_COLORS.map(function(c,i) {
+    return '<div class="of-swatch' + (i===0?' active':'') + '">'
+      + '<div class="of-dot" style="background:' + c.hex + '"></div>'
+      + '<span class="of-lbl">' + c.name + '</span></div>';
+  }).join('');
+  
+  return `
+<div class="page" id="page-${p.id}">
+  <div class="breadcrumb"><a onclick="goPage('home')">Accueil</a><span>›</span><a onclick="goPage('${parentPage}')">${parentLabel}</a><span>›</span>${p.nom}</div>
+  <div class="pdp-bg">
+    <div class="pdp-inner">
+      <div class="pdp-top">
+        <!-- Galerie -->
+        <div class="pdp-gallery">
+          <div class="pdp-main-wrap"><img id="pdp-main-${p.id}" class="pdp-main-img" src="${p.imgs[0]}" alt="${p.nom}"/></div>
+          <div class="pdp-thumbs">${thumbs}</div>
+        </div>
+        <!-- Infos -->
+        <div class="pdp-info">
+          <div class="pdp-cat-tag">${cat}</div>
+          <h1 class="pdp-h1">${p.nom}</h1>
+          <div class="pdp-price-wrap">
+            <div class="pdp-price">${fm(eur)} €</div>
+            <div class="pdp-price-note">À partir de · TVA non comprise · Livraison incluse France</div>
+          </div>
+          <div class="pdp-params">
+            <div class="pdp-param"><div class="pdp-param-icon">👤</div><div class="pdp-param-val">${p.places}</div><div class="pdp-param-lbl">Personnes</div></div>
+            <div class="pdp-param"><div class="pdp-param-icon">${p.jets?'💧':'📏'}</div><div class="pdp-param-val">${p.jets||p.longueur||'—'}</div><div class="pdp-param-lbl">${p.jets?'Jets':'Longueur'}</div></div>
+            <div class="pdp-param"><div class="pdp-param-icon">📐</div><div class="pdp-param-val">${(p.dims||'').split('×').slice(0,2).join('×')}</div><div class="pdp-param-lbl">Dimensions</div></div>
+            <div class="pdp-param"><div class="pdp-param-icon">⚡</div><div class="pdp-param-val">${p.pw||'CE'}</div><div class="pdp-param-lbl">${p.pw?'Puissance':'Certif.'}</div></div>
+          </div>
+          <p class="pdp-desc">${p.desc}</p>
+          <div class="pdp-colors-section">
+            <div class="pdp-color-title">Couleurs acrylique</div>
+            <div class="pdp-color-row">${cabBtns}</div>
+          </div>
+          <div class="pdp-colors-section">
+            <div class="pdp-color-title">Couleurs habillage</div>
+            <div class="pdp-color-row">${skirtBtns}</div>
+          </div>
+          <div class="pdp-cta">
+            <button class="pdp-btn-primary" onclick="goPage('contact')">🛒 Demander un devis gratuit</button>
+            <button class="pdp-btn-sec" onclick="goPage('contact')">📞 Nous contacter</button>
+          </div>
+        </div>
+      </div>
+      <!-- TABS -->
+      <div class="pdp-tabs">
+        <div class="pdp-tab active" onclick="pdpTab(this,'ts-${p.id}')">Spécifications</div>
+        <div class="pdp-tab" onclick="pdpTab(this,'tf-${p.id}')">Caractéristiques</div>
+        <div class="pdp-tab" onclick="pdpTab(this,'tc-${p.id}')">Couleurs</div>
+  
+      </div>
+      <div class="pdp-tab-content active" id="ts-${p.id}">
+        <table class="pdp-specs-table">${specs}</table>
+      </div>
+      <div class="pdp-tab-content" id="tf-${p.id}">
+        <div class="pdp-features">${feats}</div>
+      </div>
+      <div class="pdp-tab-content" id="tc-${p.id}">
+        <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:50px;align-items:start;padding:10px 0">
+          <div>
+            <img id="pdp-colorimg-${p.id}" src="${p.imgs[0]}" alt="${p.nom}"
+              style="width:100%;max-height:380px;object-fit:contain;background:var(--dark3);border:1px solid var(--border2);border-radius:4px;padding:20px;transition:opacity .3s"/>
+          </div>
+          <div>
+            <p style="font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:16px">Cabinet Colors :</p>
+            <div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:32px">${cabColorBtns}</div>
+            <p style="font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:16px">Skirt Colors :</p>
+            <div style="display:flex;gap:20px;flex-wrap:wrap">${skirtColorBtns}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+
+// ── BUILD GRIDS & PAGES ──
+function buildGrid(containerId, items) {
+  const el = document.getElementById(containerId);
+  if(el) el.innerHTML = items.map(p => makeCard(p)).join('');
+}
+function buildPages(containerId, items, parentPage, parentLabel, cat) {
+  const el = document.getElementById(containerId);
+  if(el) el.innerHTML = items.map(p => makePDP(p, parentPage, parentLabel, cat)).join('');
+}
+
+// Jacuzzis
+buildGrid('grid-luxury', JACUZZIS.filter(p=>p.cat.includes('luxury')));
+buildGrid('grid-patio', JACUZZIS.filter(p=>p.cat.includes('patio')));
+buildGrid('grid-round', JACUZZIS.filter(p=>p.cat.includes('round')));
+buildPages('jacuzzi-product-pages', JACUZZIS, 'hottub', 'Jacuzzi', 'Jacuzzi / Hot Tub');
+
+// Piscines
+buildGrid('grid-endless', POOLS.filter(p=>p.cat.includes('endless')));
+buildGrid('grid-fitness', POOLS.filter(p=>p.cat.includes('fitness')));
+buildGrid('grid-compact', POOLS.filter(p=>p.cat.includes('compact')));
+buildPages('pool-product-pages', POOLS, 'swimspa', 'Piscines à Nage', 'Piscine à Nage');
+
+// Saunas
+buildGrid('grid-sauna-ir', SAUNAS.filter(p=>p.cat.includes('infrared')));
+buildGrid('grid-sauna-trad', SAUNAS.filter(p=>p.cat.includes('traditional')));
+buildGrid('grid-sauna-steam', SAUNAS.filter(p=>p.cat.includes('steam')));
+buildPages('sauna-product-pages', SAUNAS, 'sauna', 'Saunas', 'Sauna');
+
+// Bain Froid
+buildGrid('grid-cold', COLD);
+buildPages('cold-product-pages', COLD, 'cold', 'Bain Froid', 'Bain Froid');
+
+// ══════════════════════════════════════════
+// NAVIGATION & INTERACTIONS
+// ══════════════════════════════════════════
+
+
+function pdpImg(pid, src) {
+  const img = document.getElementById('pdp-main-' + pid);
+  if(!img) return;
+  img.style.opacity = '0';
+  setTimeout(() => { img.src = src; img.style.opacity = '1'; }, 150);
+  document.querySelectorAll(`#page-${pid} .pdp-thumb`).forEach(t => {
+    t.classList.toggle('active', t.dataset.img === src);
+  });
+}
+function pdpTab(el, tabId) {
+  const page = el.closest('.page');
+  if(!page) return;
+  page.querySelectorAll('.pdp-tab').forEach(t => t.classList.remove('active'));
+  page.querySelectorAll('.pdp-tab-content').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  const tab = document.getElementById(tabId);
+  if(tab) tab.classList.add('active');
+}
+function pdpScene(pid, src) {
+  const img = document.getElementById('pdp-scene-' + pid);
+  if(img) { img.style.opacity='0'; setTimeout(()=>{img.src=src;img.style.opacity='1';},200); }
+}
+function pdpColor(pid, sceneSrc, mainSrc, btn) {
+  pdpScene(pid, sceneSrc);
+  const page = document.getElementById('page-' + pid);
+  if(page) page.querySelectorAll('.pdp-color-row .pdp-color-btn').forEach(b => b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+}
+function pdpYardColor(pid, sceneSrc, colorHex, btn) {
+  // Update the scene image
+  const img = document.getElementById('pdp-scene-' + pid);
+  if(img && sceneSrc) {
+    img.style.opacity = '0';
+    setTimeout(function() { img.src = sceneSrc; img.style.opacity = '1'; }, 200);
+  }
+  // Update active state - only among cabinet color buttons in scene tab
+  const page = document.getElementById('page-' + pid);
+  if(page) {
+    const sceneTab = document.getElementById('tc-' + pid);
+    if(sceneTab) {
+      sceneTab.querySelectorAll('.pdp-color-btn[onclick]').forEach(function(b) {
+        b.classList.remove('active');
+      });
+    }
+  }
+  if(btn) btn.classList.add('active');
+}
+
+
+</script>
+</body>
+</html>
